@@ -22,8 +22,8 @@ export const Navbar = () => {
 
   return (
     <div className='flex py-4 justify-between items-center'>
-      <span className='flex justify-center items-center w-6 h-6 bg-gray-600 text-xs text-white rounded-sm'>
-        E
+      <span className='flex justify-center items-center p-2 m-2 bg-gray-600 text-xs text-white rounded-sm'>
+        BLOG NBDESIGN
       </span>
 
       {
@@ -62,7 +62,7 @@ export const Navbar = () => {
         </ul>
       )}
 
-      <div className='flex justify-center text-center bg-gray-600 text-xs hover:bg-gray-500 text-gray-200 rounded-sm px-4 py-2'>
+      <div className='flex justify-center text-center bg-gray-600 text-xs hover:bg-gray-500 text-gray-200 rounded-sm px-4 py-2 drop-shadow-md'>
 
         {isAuth ? (
           <button 

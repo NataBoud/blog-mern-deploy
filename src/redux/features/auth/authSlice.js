@@ -22,7 +22,7 @@ export const registerUser = createAsyncThunk(
             }// (токен, как дата.токен)           
             return data
         } catch (error) {
-            console.log(error);
+            console.log(error)
         }
     }
 )
@@ -51,7 +51,7 @@ export const getMe = createAsyncThunk('auth/loginUser', async () => {
             const { data } = await axios.get('/auth/me')                
             return data
         } catch (error) {
-            console.log(error);
+            console.log(error)
         }
     })
 
