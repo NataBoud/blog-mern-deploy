@@ -8,7 +8,7 @@ import { store } from './redux/store'
 import { disableReactDevTools } from '@fvilers/disable-react-devtools'
 
 if (process.env.NODE_ENV === 'production') disableReactDevTools()
-// changes
+// changes debug
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
