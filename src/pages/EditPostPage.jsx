@@ -19,7 +19,7 @@ export const EditPostPage = () => {
 
     // Теперь нужно загрузить тот пост по кот мы кликнули:
     const fetchPost = useCallback(async() => {
-        const { data } = await axios.get(`https://blog-api.onrender.com/posts/${params.id}`)
+        const { data } = await axios.get(`https://blog-api-fz11.onrender.com/${params.id}`)
         setTitle(data.title)
         setText(data.text)
         setOldImage(data.imgUrl) // старую картинку будем менять на новую а эту очищать
@@ -74,7 +74,7 @@ export const EditPostPage = () => {
                 className='flex object-cover py-2'>
                     {oldImage && 
                         <img 
-                            src={`https://blog-api.onrender.com/${oldImage}`} 
+                            src={`https://blog-api-fz11.onrender.com/${oldImage}`} 
                             alt={oldImage.name}/>
                     }
                     

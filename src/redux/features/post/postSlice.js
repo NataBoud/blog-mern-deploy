@@ -11,7 +11,7 @@ export const createPost = createAsyncThunk(
     'post/createPost', 
     async(params) => {
     try {
-        const {data} = await axios.post('https://blog-api.onrender.com/posts', params)
+        const {data} = await axios.post('https://blog-api-fz11.onrender.com/posts', params)
         // params - title, text, image
         return data         
     } catch (error) {
@@ -27,7 +27,7 @@ export const getAllPosts = createAsyncThunk(
     async () => {
     try {
         // делаем get запрос: data из await.... 
-        const {data} = await axios.get('https://blog-api.onrender.com/posts')
+        const {data} = await axios.get('https://blog-api-fz11.onrender.com/posts')
         return data
     } catch (error) {
         console.log(error)
@@ -39,7 +39,7 @@ export const removePost = createAsyncThunk(
     async (id) => {
     try {
         const { data } = await axios.delete(
-            `https://blog-api.onrender.com/posts/${id}`, id)
+            `https://blog-api-fz11.onrender.com/posts/${id}`, id)
         return data
     } catch (error) {
         console.log(error);       
@@ -51,7 +51,7 @@ export const updatePost = createAsyncThunk(
     async (updatedPost) => {
     try {
         const { data } = await axios.put(
-            `https://blog-api.onrender.com/posts/${updatedPost.id}`, 
+            `https://blog-api-fz11.onrender.com/posts/${updatedPost.id}`, 
             updatedPost
         )
         return data

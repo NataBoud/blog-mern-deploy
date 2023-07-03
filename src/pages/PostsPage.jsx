@@ -13,7 +13,7 @@ export const PostsPage = () => {
   const fetchMyPosts = async () => {
     
     try {
-      const { data } = await axios.get('https://blog-api.onrender.com/posts/user/me')
+      const { data } = await axios.get('https://blog-api-fz11.onrender.com/posts/user/me')
       setPosts(data)
     } catch (error) {
       console.log(error)     

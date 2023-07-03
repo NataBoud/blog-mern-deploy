@@ -10,7 +10,7 @@ export const createComment = createAsyncThunk(
     'comment/createComment', 
     async({ postId, comment }) => {
         try {
-            const { data } = await axios.post(`https://blog-api.onrender.com/comments/${postId}`, {
+            const { data } = await axios.post(`https://blog-api-fz11.onrender.com/comments/${postId}`, {
                 postId, 
                 comment
             })
@@ -25,7 +25,7 @@ export const getPostComments = createAsyncThunk(
     'comment/getPostComment', 
     async (postId) => {
        try {
-            const { data } = await axios.get(`https://blog-api.onrender.com/posts/comments/${postId}`)
+            const { data } = await axios.get(`https://blog-api-fz11.onrender.com/posts/comments/${postId}`)
             return data        
        } catch (error) {
             console.log(error)       

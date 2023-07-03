@@ -12,7 +12,7 @@ export const registerUser = createAsyncThunk(
     'auth/registerUser', 
     async ({ username, password }) => {
         try {
-            const { data } = await axios.post('https://blog-api.onrender.com/auth/register', {
+            const { data } = await axios.post('https://blog-api-fz11.onrender.com/auth/register', {
                 username,
                 password
             })
@@ -31,7 +31,7 @@ export const loginUser = createAsyncThunk(
     'auth/loginUser', 
     async ({ username, password }) => {
         try {
-            const { data } = await axios.post('https://blog-api.onrender.com/auth/login', {
+            const { data } = await axios.post('https://blog-api-fz11.onrender.com/auth/login', {
                 username,
                 password
             })
@@ -48,7 +48,7 @@ export const loginUser = createAsyncThunk(
 
 export const getMe = createAsyncThunk('auth/loginUser', async () => {
         try {
-            const { data } = await axios.get('https://blog-api.onrender.com/auth/me')                
+            const { data } = await axios.get('https://blog-api-fz11.onrender.com/auth/me')                
             return data
         } catch (error) {
             console.log(error)

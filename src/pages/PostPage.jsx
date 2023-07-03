@@ -56,7 +56,7 @@ export const PostPage = () => {
 
 
     const fetchPost = useCallback(async() => {
-        const { data } = await axios.get(`https://blog-api.onrender.com/posts/${params.id}`)
+        const { data } = await axios.get(`https://blog-api-fz11.onrender.com/${params.id}`)
         setPost(data)
     }, [params.id])
 
