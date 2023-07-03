@@ -2,7 +2,8 @@ import axios from 'axios'
 
 const instance = axios.create({
     // baseURL: 'http://localhost:3002/api',
-    baseURL: 'https://blog-api.onrender.com',
+    // baseURL: 'https://blog-api.onrender.com',
+    baseURL: 'https://blog-api-fz11.onrender.com',
     
     
 })
