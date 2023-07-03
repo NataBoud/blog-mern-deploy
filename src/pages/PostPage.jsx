@@ -56,7 +56,7 @@ export const PostPage = () => {
 
 
     const fetchPost = useCallback(async() => {
-        const { data } = await axios.get(`/posts/${params.id}`)
+        const { data } = await axios.get(`https://blog-api.onrender.com/posts/${params.id}`)
         setPost(data)
     }, [params.id])
 
@@ -98,7 +98,7 @@ export const PostPage = () => {
                     
                         {post?.imgUrl && (
                             <img 
-                                src={`http://localhost:3002/${post.imgUrl}`} 
+                                src={`https://blog-api.onrender.com/${post.imgUrl}`} 
                                 alt='img' 
                                 className='flex object-cover w-full'
                             />

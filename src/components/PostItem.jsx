@@ -34,7 +34,7 @@ export const PostItem = ({ post }) => {
                 
                     {post.imgUrl && (
                         <img 
-                            src={`http://localhost:3002/${post.imgUrl}`} 
+                            src={`https://blog-api.onrender.com/${post.imgUrl}`} 
                             alt='img' 
                             className='flex object-cover w-full'
                         />
